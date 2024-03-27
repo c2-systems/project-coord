@@ -5,8 +5,12 @@
 	font-size: inherit;
 }
 
+body {
+	background-color: #071a2b;
+}
+
 nav.nav_1 {
-	background-color: #0d2136;
+	background-color: #071a2b;
 }
 
 nav.nav_2 {
@@ -14,178 +18,51 @@ nav.nav_2 {
 	line-height: 50px;
 }
 
+nav.nav_3 {
+	height: 50px;
+	line-height: 50px;
+	color: rgba(211, 227, 253, 0.7);
+	background-color: rgba(22, 44, 70, 1.0);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav.nav_3 ul a{
+	color: rgba(211, 227, 253, 0.7);
+}
+
 .progress {
-	margin: 0;
+	margin: 2px 0 0 0;
 	height: 10px;
 }
 .progress .indeterminate {
 	background-color: #f7d64f;
 }
 .progress-spacer {
-	margin: 0;
-	height: 10px;	
+	margin: 2px 0 0 0;
+	height: 10px;
 }
 
-
-footer.page-footer {
+.left-col {
+	color: rgba(211, 227, 253, 0.7);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	height: 900px;
 	background-color: #0d2136;
 }
 
-body.pcoord-dark {
-    background-color: #0d2136;
-    color: rgba(211,227,253,0.7);
-    pcoord-bg-rgb: 13,33,54;
-    pcoord-bg-hover: #162c46;
-    pcoord-bg-input: #0d2136;
-    pcoord-bg-input-disabled: #162d47;
-    pcoord-elevation-shadow-rgb: 0,0,0;
-    pcoord-fg-pure: #d3e3fd;
-    pcoord-fg-rgb: 255,255,255;
-    pcoord-button-outline: rgba(255,255,255,0.2);
-    pcoord-button-outline-rgb: 255,255,255;
-    pcoord-fg-primary: #d3e3fd;
-    pcoord-fg-primary-rgb: 211,227,253;
-    pcoord-fg-secondary: rgba(211,227,253,0.7);
-    pcoord-fg-tertiary: rgba(211,227,253,0.3);
-    pcoord-fg-disabled: rgba(211,227,253,0.3);
-    pcoord-bg-selected-disabled: #476282;
-    pcoord-fg-placeholder: rgba(211,227,253,0.6);
-    pcoord-fg-default-border: rgba(211,227,253,0.3);
-    pcoord-fg-secondary-border: rgba(211,227,253,0.3);
-    pcoord-primary: #7cacf8;
-    pcoord-primary-rgb: 124,172,248;
-    pcoord-primary-bg: rgba(174,203,250,0.04);
-    pcoord-dark-button-bg: #7cacf8;
-    pcoord-dark-button-ink: #041e49;
-    pcoord-dark-button-disabled-bg: rgba(255,255,255,0.06);
-    pcoord-dark-button-disabled-ink: rgba(211,227,253,0.3);
-    pcoord-navbar-bg: #071a2b;
-    pcoord-navbar-group-bg: rgba(124,172,248,0.07);
-    pcoord-navbar-item-bg-hover: rgba(124,172,248,0.08);
-    pcoord-navbar-item-selected-bg: #0842a0;
-    pcoord-line-rgb: transparent;
-    pcoord-navbar-scroll-thumb: #8a9bb2;
-    pcoord-navbar-scroll-thumb-border: #262f3d;
-    pcoord-navbar-scroll-thumb-hover: #a5b0c4;
-    pcoord-divider: rgba(211,227,253,0.08);
-    pcoord-appbar-button-bg: rgba(124,172,248,0.08);
-    pcoord-appbar-button-bg-hover: rgba(124,172,248,0.2);
-    pcoord-zero-state-overcut: rgba(124,172,248,0.04);
-    pcoord-zero-state-undercut: rgba(124,172,248,0.04);
-    pcoord-primary-a11y: rgb(138,180,248);
-    pcoord-primary-2: rgb(174,203,250);
-    pcoord-primary-3: rgb(210,227,252);
-    pcoord-primary-dark: rgb(138,180,248);
-    pcoord-ink-1-on-color: #041e49;
-    pcoord-on-primary: #041e49;
-    pcoord-code-background: rgba(124,172,248,0.08);
-    pcoord-code-ink: rgba(211,227,253,0.7);
-    pcoord-code-comments: #f06292;
-    pcoord-code-keywords: #4c8df6;
-    pcoord-code-numbers: #f4511e;
-    pcoord-code-strings: #1ea446;
-    pcoord-code-types: #8e24aa;
-    pcoord-opacity-highlight: 0.06;
-    pcoord-opacity-highlight-2: 0.08;
-    pcoord-error-light: rgb(252,232,230);
-    pcoord-error: #e46962;
-    pcoord-success: #00796b;
-    pcoord-search-highlight: rgba(255,143,0,0.2);
-    pcoord-platform-android: #00bfa5;
-    pcoord-platform-ios: #03a9f4;
-    pcoord-platform-web: #d81d61;
-    pcoord-inverted-bg: #d3e3fd;
-    pcoord-inverted-primary-ink: #041e49;
-    pcoord-inverted-secondary-ink: rgba(4,30,73,0.7);
-    pcoord-focus-outline: rgba(26,115,232,0.8);
-    pcoord-link: #7cacf8;
-    pcoord-note-vivid-fill: #b2c1d4;
-    pcoord-tip-vivid-fill: #7cacf8;
-    pcoord-success-vivid-fill: #6dd58c;
-    pcoord-error-vivid-fill: #ec928e;
-    pcoord-callout-text: #041e49;
-    pcoord-note-faint-fill: rgba(211,227,253,0.08);
-    pcoord-tip-faint-fill: rgba(124,172,248,0.08);
-    pcoord-success-faint-fill: rgba(109,213,140,0.08);
-    pcoord-error-faint-fill: rgba(228,105,98,0.08);
-    pcoord-caution-faint-fill: rgba(255,179,0,0.08);
-    pcoord-caution-extra-faint-fill: rgba(255,179,0,0.08);
-    pcoord-caution-faint-fill-hover: rgba(166,174,168,0.1536);
-    pcoord-note-ink: rgba(211,227,253,0.7);
-    pcoord-tip-ink: #7cacf8;
-    pcoord-success-ink: #6dd58c;
-    pcoord-error-ink: #ec928e;
-    pcoord-caution-ink: #ffb300;
-    pcoord-tip-stroke: rgba(124,172,248,0.3);
-    pcoord-success-stroke: rgba(109,213,140,0.3);
-    pcoord-error-stroke: rgba(228,105,98,0.3);
-    pcoord-caution-stroke: rgba(255,179,0,0.3);
-    pcoord-bell-badge: #ec928e;
-    pcoord-bg-secondary: #031525;
-    pcoord-bg-secondary-hover: rgba(124,172,248,0.05);
-    pcoord-bg-tertiary: rgba(174,203,250,0.04);
-    pcoord-surface-blue: #7cacf8;
-    pcoord-surface-2: rgba(124,172,248,0.04);
-    pcoord-surface-3: rgba(124,172,248,0.06);
-    pcoord-data-viz-line: rgba(211,227,253,0.08);
-    pcoord-data-viz-1: rgb(66,133,244);
-    pcoord-data-viz-1-rgb: 66,133,244;
-    pcoord-data-viz-1-fg-primary: rgb(25,103,210);
-    pcoord-data-viz-2: #ff8f00;
-    pcoord-data-viz-2-rgb: 255,143,0;
-    pcoord-data-viz-2-fg-primary: #bf360c;
-    pcoord-data-viz-3: #ec407a;
-    pcoord-data-viz-3-rgb: 236,64,122;
-    pcoord-data-viz-3-fg-primary: #c2185b;
-    pcoord-data-viz-4: #00b8d4;
-    pcoord-data-viz-4-rgb: 0,184,212;
-    pcoord-data-viz-4-fg-primary: #006064;
-    pcoord-data-viz-5: #8bc34a;
-    pcoord-data-viz-5-rgb: 139,195,74;
-    pcoord-data-viz-5-fg-primary: #1b5e20;
-    pcoord-data-viz-6: #a0f;
-    pcoord-data-viz-6-rgb: 170,0,255;
-    pcoord-data-viz-6-fg-primary: #7b1fa2;
-    pcoord-data-viz-7: #fbc02d;
-    pcoord-data-viz-7-rgb: 251,192,45;
-    pcoord-data-viz-7-fg-primary: #bf360c;
-    pcoord-data-viz-8: #00897b;
-    pcoord-data-viz-8-rgb: 0,137,123;
-    pcoord-data-viz-8-fg-primary: #00897b;
-    pcoord-data-viz-9: #673ab7;
-    pcoord-data-viz-9-rgb: 103,58,183;
-    pcoord-data-viz-9-fg-primary: #9575cd;
-    pcoord-data-viz-10: #476282;
-    pcoord-data-viz-10-rgb: 71,98,130;
-    pcoord-data-viz-10-fg-primary: #476282;
-    pcoord-product-accent-1: transparent;
-    pcoord-product-accent-1-hover: rgba(26,115,232,0.08);
-    pcoord-product-accent-1-ink: rgb(26,115,232);
-    pcoord-product-accent-2: transparent;
-    pcoord-product-accent-2-hover: rgba(94,53,177,0.08);
-    pcoord-product-accent-2-ink: #5e35b1;
-    pcoord-product-accent-3: transparent;
-    pcoord-product-accent-3-hover: rgba(251,140,0,0.08);
-    pcoord-product-accent-3-ink: #fb8c00;
-    pcoord-product-accent-4: transparent;
-    pcoord-product-accent-4-hover: rgba(216,27,96,0.08);
-    pcoord-product-accent-4-ink: #d81b60;
-    pcoord-product-accent-5: transparent;
-    pcoord-product-accent-5-hover: rgba(124,179,66,0.08);
-    pcoord-product-accent-5-ink: #7cb342;
-    pcoord-product-accent-6: transparent;
-    pcoord-product-accent-6-hover: rgba(244,81,30,0.08);
-    pcoord-product-accent-6-ink: #f4511e;
-    pcoord-product-accent-7: transparent;
-    pcoord-product-accent-7-hover: rgba(0,137,123,0.08);
-    pcoord-product-accent-7-ink: #00897b;
-    pcoord-gen-ai-fg-primary: #311b92;
-    pcoord-gen-ai-primary: #cfddff;
-    pcoord-gen-ai-secondary: #cfddff;
-    pcoord-gen-ai-muted: #dfc1f8;
-    pcoord-gen-ai-muted-secondary: #2e6f63;
-    pcoord-gen-ai-muted-bg: #f9f3fe;
-    pcoord-gen-ai-surface: #324043;
-    pcoord-hero-banner-bg: rgba(124,172,248,0.16);
+.right-col {
+	color: rgba(211, 227, 253, 0.7);
+	height: 900px;
+	background-color: #0d2136;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+footer.page-footer {
+	background-color: #071a2b;
+}
+
+footer.page-footer .footer-copyright{
+	background-color: #071a2b;
+}
