@@ -2,9 +2,16 @@
   
   $(function(){
 
-	//$('.progress').hide(); 
 	hideLoader();
 	$('select').formSelect();
+	
+	$(".dropdown-trigger").dropdown();
+	
+	$('.select-item').click((event)=>{
+		$('.selected-item').removeClass('selected-item');
+		$(event.target).addClass('selected-item');
+		console.log(event);
+	});
 	
 
   }); // end of document ready

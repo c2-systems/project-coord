@@ -13,6 +13,11 @@ nav.nav_1 {
 	background-color: #071a2b;
 }
 
+.dropdown-content {
+	position: relative;
+	top: -64px;
+}
+
 nav.nav_2 {
 	height: 50px;
 	line-height: 50px;
@@ -42,6 +47,10 @@ nav.nav_3 ul a{
 	height: 10px;
 }
 
+.row .col {
+	padding: 0px;
+}
+
 .left-col {
 	color: rgba(211, 227, 253, 0.7);
 	border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -49,6 +58,7 @@ nav.nav_3 ul a{
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
 	height: 900px;
 	background-color: #0d2136;
+	padding: 0px;
 }
 
 .right-col {
@@ -57,6 +67,37 @@ nav.nav_3 ul a{
 	background-color: #0d2136;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.select-item {
+	padding:20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.0);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.0);
+}
+
+.select-item:hover {
+	background-color: rgba(22, 44, 70, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.selected-item, .selected-item:hover {
+	background-color: rgba(22, 44, 70, 1.0);
+}
+
+.message-item {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	
+	border-radius: 25px;
+	background-color: rgba(22, 44, 70, 1.0);
 }
 
 footer.page-footer {
