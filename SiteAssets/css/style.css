@@ -52,18 +52,22 @@ nav.nav_3 ul a{
 }
 
 .left-col {
+	overflow-y: auto;
 	color: rgba(211, 227, 253, 0.7);
 	border-left: 1px solid rgba(255, 255, 255, 0.2);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
-	height: 900px;
+	height: calc(100vh - 300px);
+	max-height: calc(100vh - 300px);
 	background-color: #0d2136;
 	padding: 0px;
 }
 
 .right-col {
+	overflow-y: auto;
 	color: rgba(211, 227, 253, 0.7);
-	height: 900px;
+	height: calc(100vh - 300px);
+	max-height: calc(100vh - 300px);
 	background-color: #0d2136;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -98,6 +102,23 @@ nav.nav_3 ul a{
 	
 	border-radius: 25px;
 	background-color: rgba(22, 44, 70, 1.0);
+}
+
+.document-snippet {
+	
+	color: #071a2b;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	
+	border-radius: 25px;
+	background-color: rgba(211, 227, 253, 0.7);
 }
 
 footer.page-footer {
