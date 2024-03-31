@@ -51,6 +51,19 @@ nav.nav_3 ul a{
 	padding: 0px;
 }
 
+.main-col {
+	overflow-y: auto;
+	color: rgba(211, 227, 253, 0.7);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	height: calc(100vh - 300px);
+	max-height: calc(100vh - 300px);
+	background-color: #0d2136;
+	padding: 0px;
+}
+
+
 .left-col {
 	overflow-y: auto;
 	color: rgba(211, 227, 253, 0.7);
