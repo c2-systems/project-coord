@@ -61,7 +61,7 @@ let progressState;
 		objDiv.click((event)=>{
 			$('.selected-item').removeClass('selected-item');
 			$(event.target).addClass('selected-item');
-			alert(event.target.id);
+			M.toast({html: 'Toast: ' + event.target.id, classes: 'toast'});
 		});
 
 		return objDiv;

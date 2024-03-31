@@ -144,3 +144,7 @@ footer.page-footer {
 footer.page-footer .footer-copyright{
 	background-color: #071a2b;
 }
+
+.toast {
+	background-color: #ff9800;
+}
