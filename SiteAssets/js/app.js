@@ -10,9 +10,14 @@ let topics = {name: 'topics', layout:[{class: 'left-col', w: 4}, {class: 'right-
 paths.set('topics', topics);
 
 function route(pathName) {
-			currentPath = paths.get(pathName);
-			setLayout(currentPath.layout);
-			dataLoad(currentPath.data);
+
+	$('.active').removeClass('active');
+
+	currentPath = paths.get(pathName);
+	setLayout(currentPath.layout);
+	dataLoad(currentPath.data);
+
+	$("[data-route='" + pathName + "']").addClass('active');
 }
 
 function setLayout(layout) {
