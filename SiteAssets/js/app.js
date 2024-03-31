@@ -1,3 +1,4 @@
+let path;
 let progressState;
 
 function toggleLoader() {
