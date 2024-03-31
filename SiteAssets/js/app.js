@@ -1,18 +1,18 @@
 let currentPath;
+
 let progressState;
 
 let paths = new Map();
-
-let documents = {layout:[{class: 'main-col', w: 12}]};
+let documents = {name: 'documents', layout:[{class: 'main-col', w: 12}], data: []};
 paths.set('documents', documents);
 
-let topics = {layout:[{class: 'left-col', w: 4}, {class: 'right-col', w: 8}], data: [addSelectItems, addTopic, addMessages]};
+let topics = {name: 'topics', layout:[{class: 'left-col', w: 4}, {class: 'right-col', w: 8}], data: [addSelectItems, addTopic, addMessages]};
 paths.set('topics', topics);
 
 function route(pathName) {
-	currentPath = paths.get(pathName);
-	setLayout(currentPath.layout);
-	dataLoad(currentPath.data);
+			currentPath = paths.get(pathName);
+			setLayout(currentPath.layout);
+			dataLoad(currentPath.data);
 }
 
 function setLayout(layout) {

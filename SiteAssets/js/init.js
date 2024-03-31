@@ -3,13 +3,9 @@
 	$(function() {
 
 		hideLoader();
-		$('select').formSelect();
-
 		$(".dropdown-trigger").dropdown();
+		route('topics');
 
-		addSelectItems();
-		addTopic();
-		addMessages();
 
 	}); // end of document ready
 
