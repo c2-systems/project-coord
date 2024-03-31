@@ -89,6 +89,21 @@ nav.nav_3 ul a{
 	background-color: rgba(22, 44, 70, 1.0);
 }
 
+.topic-item {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	
+	border-radius: 10px;
+	background-color: rgba(33, 66, 105, 1.0);
+}
+
 .message-item {
 	margin-top: 20px;
 	margin-right: 20px;
@@ -100,7 +115,7 @@ nav.nav_3 ul a{
 	padding-bottom: 40px;
 	padding-left: 20px;
 	
-	border-radius: 25px;
+	border-radius: 10px;
 	background-color: rgba(22, 44, 70, 1.0);
 }
 
@@ -108,16 +123,16 @@ nav.nav_3 ul a{
 	
 	color: #071a2b;
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 0px;
 	margin-bottom: 0px;
-	margin-left: 20px;
+	margin-left: 0px;
 	
 	padding-top: 20px;
 	padding-right: 20px;
 	padding-bottom: 40px;
 	padding-left: 20px;
 	
-	border-radius: 25px;
+	border-radius: 10px;
 	background-color: rgba(211, 227, 253, 0.7);
 }
 

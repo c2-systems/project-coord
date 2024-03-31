@@ -14,7 +14,7 @@
 	});
 	
 	addSelectItems();
-	addSnippet();
+	addTopic();
 	addMessages();
 
   }); // end of document ready
@@ -48,6 +48,7 @@ let progressState;
 
 		let text = '$Allan';
 		objDiv = $('<div></div>', {'class': 'select-item'});
+		objDiv.attr('id', 'xyz_123');
 		objSpan = $('<span></span>');
 		objSpan.text(text);
 		objBadge = $('<span>4 asd</span>');
@@ -60,21 +61,44 @@ let progressState;
 		objDiv.click((event)=>{
 			$('.selected-item').removeClass('selected-item');
 			$(event.target).addClass('selected-item');
-			console.log(event);
+			alert(event.target.id);
 		});
 
 		return objDiv;
 	}  
 
-	function getSnippetHTML(message) {
+	function getSnippetHTML() {
 
+		let msg = '$Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 		objDiv = $('<div></div>', {'class': 'document-snippet'});
 		objSpanText = $('<span></span>');
 		objPara = $('<p></p>');
-		objPara.text(message);
+		objPara.text(msg);
 		objBadge = $('<span>erwtertertertert sdf</span>');
 		objBadge.addClass('badge');
 		objBadge.addClass('black-text');
+		
+		objSpanText.append(objPara);
+		objDiv.append(objSpanText);
+		objDiv.append(objBadge);
+
+		return objDiv;
+	}
+	
+	function getTopicHTML() {
+
+		let msg = 'Topic Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+		let objDiv = $('<div></div>', {'class': 'topic-item'});
+		
+		let objSpanText = $('<span></span>');
+		let objPara = $('<p></p>');
+		objPara.text(msg);
+		let objBadge = $('<span>erwtertertertert sdf</span>');
+		objBadge.addClass('badge');
+		objBadge.addClass('grey-text');
+		
+		let snippet = getSnippetHTML();
+		objDiv.append(snippet);
 		
 		objSpanText.append(objPara);
 		objDiv.append(objSpanText);
@@ -116,11 +140,9 @@ function addSelectItems() {
 	}
 }
 
-function addSnippet() {
+function addTopic() {
 	
-	let msg = '$Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-
-	let msgHtml = getSnippetHTML(msg);
+	let msgHtml = getTopicHTML();
 	$('.right-col').append(msgHtml);
 }
 
