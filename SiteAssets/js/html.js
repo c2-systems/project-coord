@@ -112,3 +112,32 @@ function getMessageHTML(message) {
 
 	return objDiv;
 }
+
+
+function getDocSearchBar() {
+
+	let objDiv1 = $('<div></div>');
+	objDiv1.addClass('nav-wrapper');
+	let objForm = $('<form></form>');
+	let objDiv2 = $('<div></div>');
+	objDiv2.addClass('input-field');
+	let objInput = $('<input required=""></input>');
+	objInput.attr('id', 'search');
+	objInput.attr('type', 'search');
+	let objLabel = $('<label></label>');
+	objLabel.addClass('label-icon');
+	objLabel.attr('for', 'search');
+	let objIcon1 = $('<i>search</i>');
+	objIcon1.addClass('material-icons');
+	let objIcon2 = $('<i>close</i>');
+	objIcon2.addClass('material-icons');
+
+	objDiv2.append(objInput);
+	objLabel.append(objIcon1);
+	objDiv2.append(objLabel);
+	objDiv2.append(objIcon2);
+	objForm.append(objDiv2)
+	objDiv1.append(objForm);
+
+	return objDiv1;
+}

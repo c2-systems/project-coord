@@ -3,7 +3,7 @@ let currentPath;
 let progressState;
 
 let paths = new Map();
-let documents = {name: 'documents', layout:[{class: 'main-col', w: 12}], data: []};
+let documents = {name: 'documents', layout:[{class: 'main-col', w: 12}], data: [addDocSearch]};
 paths.set('documents', documents);
 
 let topics = {name: 'topics', layout:[{class: 'left-col', w: 4}, {class: 'right-col', w: 8}], data: [addSelectItems, addTopic, addMessages]};
@@ -21,6 +21,8 @@ function route(pathName) {
 }
 
 function setLayout(layout) {
+
+	$('nav.nav_3').html('');
 	$('div.main').html('');
 
 	for(let i=0; i<layout.length; i++) {
@@ -79,4 +81,9 @@ function addMessages() {
 		let msgHtml = getMessageHTML(msg);
 		$('.right-col').append(msgHtml);
 	}
+}
+
+function addDocSearch() {
+	let search = getDocSearchBar();
+	$('.nav_3').append(search);
 }

@@ -161,3 +161,17 @@ footer.page-footer .footer-copyright{
 .toast {
 	background-color: #ff9800;
 }
+
+.nav-wrapper .input-field input[type=search] {
+	height: inherit;
+	padding-left: 4rem;
+	width: calc(100% - 4rem);
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+nav .nav-wrapper i {
+	height: 50px;
+	line-height: 50px;
+}
