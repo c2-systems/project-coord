@@ -122,15 +122,31 @@ function getDocSearchBar() {
 	let objDiv2 = $('<div></div>');
 	objDiv2.addClass('input-field');
 	let objInput = $('<input required=""></input>');
-	objInput.attr('id', 'search');
+	objInput.attr('id', 'rs-doc-search');
 	objInput.attr('type', 'search');
+	objInput.keyup(function(event) {
+		if ( event.which == 13 ) {
+			event.preventDefault();
+			let term = $('#rs-doc-search').val();
+			$('#rs-doc-search').blur();
+
+			M.toast({
+				html: 'Toast: ' + term,
+				classes: 'toast'
+			});
+		}
+	});
+
 	let objLabel = $('<label></label>');
 	objLabel.addClass('label-icon');
-	objLabel.attr('for', 'search');
+	objLabel.attr('for', 'rs-doc-search');
 	let objIcon1 = $('<i>search</i>');
 	objIcon1.addClass('material-icons');
 	let objIcon2 = $('<i>close</i>');
 	objIcon2.addClass('material-icons');
+	objIcon2.click((event) => {
+		$('#rs-doc-search').val('');
+	});
 
 	objDiv2.append(objInput);
 	objLabel.append(objIcon1);

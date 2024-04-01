@@ -175,3 +175,7 @@ nav .nav-wrapper i {
 	height: 50px;
 	line-height: 50px;
 }
+
+nav .input-field input {
+	color: rgba(211, 227, 253, 0.7);
+}
